@@ -1,0 +1,82 @@
+/***************************
+Add your custom styles below
+****************************/
+
+.center-text {
+  text-align: center !important;
+}
+
+.footer-links {
+  text-decoration: none;
+  display: inline;
+}
+
+.footer-links li {
+	margin: 0 auto;
+	text-align: center;
+	display: inline;
+	padding: 0px 80px;
+}
+
+.true-white {
+	background: #fff;
+}
+
+section.hidden-xs.bg--secondary {
+  padding-top: 75px !important;
+}
+
+
+.no-padding {
+	padding-top: 70px !important;
+	padding-bottom: 0px !important;
+}
+
+.black_btn {
+	background: #fff;
+}
+
+.main_btn {
+	border: 1px solid white !important; 
+	background: transparent !important;
+	color: white !important;
+}
+
+span.btn__text a {
+	color: white !important;
+}
+
+.imagebg:not(.image--light) .btn:not(.btn--primary) .main_btn {
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+}
+
+.imagebg:not(.image--light) .btn:not(.btn--primary) .btn__text .black-text {
+	color: #428fbb;
+}
+
+.imagebg:not(.image--light) .btn:not(.btn--primary) .btn__text .black-text {
+	color: #428fbb !important;
+}
+
+.span.btn__text.black-text {
+	color: #428fbb !important;
+}
+
+.menu > li a {
+	font-size:12px;
+}
+
+h6 {
+	font-size:.72em;
+}
+
+@media all and (max-width: 767px){
+
+.masonry__item {
+	width: 100%;
+	max-width: 100%;
+}
+
+}
