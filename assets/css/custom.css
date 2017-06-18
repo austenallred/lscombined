@@ -34,35 +34,27 @@ section.hidden-xs.bg--secondary {
 
 .black_btn {
 	background: #fff;
+	width: 190px;
 }
 
 .main_btn {
-	border: 1px solid white !important; 
+	border: 1px solid #ffffff !important; 
 	background: transparent !important;
-	color: white !important;
+	width: 190px;
+	text-align:center;
 }
+
+.imagebg:not(.image--light) .btn:not(.btn--primary) .green-text {
+	color: #428fbb !important;
+}
+
+
 
 span.btn__text a {
-	color: white !important;
+	color: #ffffff !important;
 }
 
-.imagebg:not(.image--light) .btn:not(.btn--primary) .main_btn {
-	border: 1px solid white;
-	background: transparent;
-	color: white;
-}
 
-.imagebg:not(.image--light) .btn:not(.btn--primary) .btn__text .black-text {
-	color: #428fbb;
-}
-
-.imagebg:not(.image--light) .btn:not(.btn--primary) .btn__text .black-text {
-	color: #428fbb !important;
-}
-
-.span.btn__text.black-text {
-	color: #428fbb !important;
-}
 
 .menu > li a {
 	font-size:12px;
