@@ -68,6 +68,10 @@ h6 {
 	padding-top: 0px;
 }
 
+.remove-bottom-padding {
+	padding-bottom: 0px;
+}
+
 @media all and (max-width: 767px){
 
 .masonry__item {
