@@ -13,23 +13,24 @@
                     <div class="masonry__container masonry--animate masonry--active">
                     	{% for post in site.posts %}
                         <div class="col-md-4 col-sm-6 masonry__item">
-                            <a href="#">
+                            <a href="{{ post.url }}">
                                 <div class="card card-4">
                                     <!-- <div class="card__image">
                                         <img alt="Pic" src="/assets/img/small5.jpg">
                                     </div> -->
                                     
                                     <div class="card__body boxed boxed--sm bg--white">
-                                   	
+                                   		
                                         <div class="card__title">
                                         	<ul>
 											  
 											    <h5>
-											      <a href="{{ post.url }}">{{ post.title }}</a>
+											      {{ post.title }}
 											    </h5>
 											  
 											</ul>
                                         </div>
+                                        
                                         <hr>
                                         <div class="card__lower">
                                             <span>{{ post.date  | date_to_long_string}}</span>
@@ -38,8 +39,9 @@
                                     </div>
                                     
                                 </div>
-                            </a>
-                        </div>                           
+                            
+                        </div>    
+                        </a>                       
                         {% endfor %}
                     </div>
                     
