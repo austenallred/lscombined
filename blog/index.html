@@ -1,0 +1,79 @@
+---
+# this is an empty front matter
+---
+{% include head.html %}
+{% include nav.html %}
+		
+<div class="main-container">
+<section>
+        <div class="container">
+            <div class="row">
+            	<h4>LambdaSchool Blog</h4>
+                <div class="masonry masonry-blog">
+                    <div class="masonry__container masonry--animate masonry--active">
+                    	{% for post in site.posts %}
+                        <div class="col-md-4 col-sm-6 masonry__item">
+                            <a href="#">
+                                <div class="card card-4">
+                                    <!-- <div class="card__image">
+                                        <img alt="Pic" src="/assets/img/small5.jpg">
+                                    </div> -->
+                                    
+                                    <div class="card__body boxed boxed--sm bg--white">
+                                   	
+                                        <div class="card__title">
+                                        	<ul>
+											  
+											    <h5>
+											      <a href="{{ post.url }}">{{ post.title }}</a>
+											    </h5>
+											  
+											</ul>
+                                        </div>
+                                        <hr>
+                                        <div class="card__lower">
+                                            <span>{{ post.date  | date_to_long_string}}</span>
+                                            <span class="h6"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                        </div>                           
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+                
+                <!-- <div class="pagination-container">
+                    <hr>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">
+                                <span>←</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            
+        </div>
+        
+    </section>
+</div>
+
+{% include footer.html %}

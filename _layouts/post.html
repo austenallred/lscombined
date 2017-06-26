@@ -1,0 +1,61 @@
+---
+# this is an empty front matter
+---
+
+{% include head.html%}
+{% include nav.html%}
+    <body class="theme--square" data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+
+				
+		<div class="nav-container">
+		</div>
+		
+		<div class="main-container">
+		<section class="blog-post">
+		                <div class="blog-post__title bg--secondary">
+		                    <div class="container">
+		                        <div class="row">
+		                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+		                                <h1>{{ page.title }}</h1>
+		                            </div>
+		                        </div>
+		                        
+		                    </div>
+		                    
+		                </div>
+		                <div class="container">
+		                    <div class="row">
+		                        <div class="col-sm-10 col-sm-offset-1">
+		                            <br><br><br>
+		                        </div>
+		                        <div class="col-sm-8 col-sm-offset-2">
+		                            {{ content }}
+		                            <hr>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="row">
+		                        <div class="col-sm-12 text-center">
+		                            <div class="blog-post__share">
+		                            	
+		                                <h5>Share this article</h5>
+		                                <a class="btn btn--sm bg--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lambdaschool.com/{{ page.url }}">
+		                                    <span class="btn__text">
+		                                        <i class="socicon-facebook"></i> Share on Facebook
+		                                    </span>
+		                                </a>
+		                                <a class="btn btn--sm bg--twitter" href="https://twitter.com/home?status=https://lambdaschool.com{{ page.url }}">
+		                                    <span class="btn__text">
+		                                        <i class="socicon-twitter"></i> Share on Twitter
+		                                    </span>
+		                                </a>
+		                            </div>
+		                        </div>
+
+		                    </div>
+		                    
+		                    
+		                
+		            </section></div>
+		
+{% include footer.html%}				
