@@ -4,8 +4,44 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Lambda School - Computer Science Education for Free</title>
-	<meta name="description" content="Learn Computer Science online - free until you get a job"/>
+<!-- TITLES AND METAS -->
+	{% if page.desc %}
+	<meta name="description" content="{{ page.desc }}" />
+	{% else %}
+	<meta name="description" content="I’m a freelance designer and front-end developer with a passion for details and clean interfaces." />
+	{% endif %}
+
+	{% if page.title %}
+	<title>{{ page.title }}</title>
+	{% else %}
+	<title>Lambda School</title>
+	{% endif %}
+
+	{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}" />
+	{% else %}
+	<meta name="keywords" content="freelance, designer, wirral, web design, development, UI designer, freelance developer, jekyll, grunt, sass, front-end developer, Dave McNally, davemcnally, freelance designer wirral, freelance designer, tileable, tileables, photoshop, patterns, textures" />
+	{% endif %}
+<!-- END TITLES AND METAS -->
+
+<!-- FAVICON -->
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<!-- END FAVICON -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/assets/css/socicon.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/assets/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
@@ -18,4 +54,3 @@
 </head>
 <body class="theme--square" data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
 	
-<!-- END HEAD -->
