@@ -6,6 +6,10 @@ Add your custom styles below
   text-align: center !important;
 }
 
+.typeform {
+	position: absolute; left:0; right:0; bottom:0; top:0; border:0;
+}
+
 .footer-links {
   text-decoration: none;
   display: inline;
