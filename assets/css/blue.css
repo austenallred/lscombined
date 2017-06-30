@@ -3113,7 +3113,6 @@ body.theme--boxed section:not(.bg--white):not(.bg--dark):not(.bg--secondary):not
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
